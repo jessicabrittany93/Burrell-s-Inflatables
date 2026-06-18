@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Colorful inflatable bounce house illustration">
+  <defs>
+    <linearGradient id="grad1" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#9be7ff"/>
+      <stop offset="100%" stop-color="#d9f2ff"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ffd86b"/>
+      <stop offset="100%" stop-color="#ffb84d"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect width="1200" height="800" fill="url(#grad1)" />
+  <g fill="#fff" opacity="0.9">
+    <ellipse cx="900" cy="120" rx="120" ry="40" />
+    <ellipse cx="720" cy="80" rx="80" ry="30" />
+    <ellipse cx="200" cy="160" rx="100" ry="30" />
+  </g>
+
+  <!-- ground -->
+  <rect x="0" y="600" width="1200" height="200" fill="#9bd88a" />
+
+  <!-- bounce house base -->
+  <g transform="translate(150,140)">
+    <!-- main body -->
+    <rect x="60" y="180" width="720" height="360" rx="20" fill="url(#grad2)" stroke="#cc6a00" stroke-width="8" />
+
+    <!-- entrance -->
+    <ellipse cx="420" cy="360" rx="160" ry="140" fill="#ff6b6b" />
+    <rect x="300" y="250" width="240" height="220" rx="80" fill="#ff6b6b" />
+
+    <!-- arch detail -->
+    <path d="M300 300 A120 120 0 0 1 540 300 L540 420 A120 120 0 0 1 300 420 Z" fill="#d64545" opacity="0.95" />
+
+    <!-- roof arch -->
+    <path d="M120 220 Q420 80 720 220" fill="none" stroke="#2b6cff" stroke-width="36" stroke-linecap="round" />
+
+    <!-- turrets -->
+    <g>
+      <rect x="40" y="80" width="120" height="260" rx="20" fill="#ffd86b" stroke="#cc6a00" stroke-width="6" />
+      <rect x="660" y="80" width="120" height="260" rx="20" fill="#ffd86b" stroke="#cc6a00" stroke-width="6" />
+      <polygon points="100,60 80,120 120,120" fill="#ff6b6b" />
+      <polygon points="720,60 700,120 740,120" fill="#ff6b6b" />
+      <!-- flags -->
+      <rect x="96" y="18" width="6" height="50" fill="#cc6a00" />
+      <rect x="716" y="18" width="6" height="50" fill="#cc6a00" />
+      <polygon points="102,28 138,40 102,52" fill="#ff6b6b" />
+      <polygon points="722,28 758,40 722,52" fill="#ff6b6b" />
+    </g>
+
+    <!-- base bumpers -->
+    <rect x="0" y="480" width="120" height="60" rx="30" fill="#2b6cff" />
+    <rect x="780" y="480" width="120" height="60" rx="30" fill="#2b6cff" />
+
+    <!-- text on bouncehouse -->
+    <text x="420" y="330" font-family="Arial, Helvetica, sans-serif" font-size="44" text-anchor="middle" fill="#004aad">Burrell's Inflatables</text>
+  </g>
+</svg>
