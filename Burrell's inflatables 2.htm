@@ -1,0 +1,414 @@
+<!D<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Burrell Inflatable</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fffdf7;
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    background:#fff;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo img{
+    height:80px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#003399;
+    font-weight:600;
+    margin-left:30px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff0000;
+}
+
+/* HERO */
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:80px 60px;
+    background:linear-gradient(135deg,#fff8e6,#ffffff);
+}
+
+.hero-text{
+    max-width:500px;
+}
+
+.hero-text h2{
+    font-size:50px;
+    color:#003399;
+}
+
+.hero-text h1{
+    font-family:'Lilita One', cursive;
+    font-size:100px;
+    color:#ff0000;
+    line-height:1;
+}
+
+.hero-text p{
+    margin-top:20px;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#ffcc00;
+    color:#000;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+}
+
+.hero img{
+    width:550px;
+    max-width:100%;
+}
+
+/* FEATURES */
+
+.features{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:40px;
+    background:white;
+}
+
+.feature{
+    width:250px;
+    text-align:center;
+}
+
+.feature h3{
+    color:#003399;
+}
+
+/* PRICING */
+
+.pricing{
+    padding:80px 40px;
+    background:#003399;
+    color:white;
+    text-align:center;
+}
+
+.pricing h2{
+    font-family:'Lilita One';
+    font-size:50px;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.card{
+    background:white;
+    color:#222;
+    width:300px;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.card h3{
+    color:#003399;
+}
+
+.price{
+    font-size:60px;
+    color:#ff0000;
+    font-weight:bold;
+    margin:20px 0;
+}
+
+/* POLICIES */
+
+.policies{
+    padding:80px 50px;
+}
+
+.policy-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.policy{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.policy h3{
+    color:#ff0000;
+    margin-bottom:15px;
+}
+
+/* CONTACT */
+
+.contact{
+    background:#ffcc00;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.contact h2{
+    font-family:'Lilita One';
+    font-size:50px;
+    color:#003399;
+}
+
+.contact p{
+    font-size:20px;
+    margin:10px;
+}
+
+footer{
+    background:#003399;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:70px;
+}
+
+.hero img{
+    margin-top:40px;
+}
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    margin:10px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+    <img src="logo.png" alt="Burrell's Inflatables">
+</div>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Rentals</a>
+    <a href="#">Pricing</a>
+    <a href="#">Policies</a>
+    <a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+    <h2>Make Your Event</h2>
+    <h1>BOUNCE!</h1>
+
+    <p>
+        Fun, safe, and clean inflatable rentals for unforgettable memories.
+    </p>
+
+    <a href="#" class="btn">BOOK NOW</a>
+</div>
+
+<img src="slide.png" alt="Inflatable Slide">
+
+</section>
+
+<section class="features">
+
+<div class="feature">
+    <h3>Safe & Clean</h3>
+    <p>Sanitized before every rental.</p>
+</div>
+
+<div class="feature">
+    <h3>On Time</h3>
+    <p>Delivery, setup and pickup included.</p>
+</div>
+
+<div class="feature">
+    <h3>Family Fun</h3>
+    <p>Perfect for all ages and events.</p>
+</div>
+
+</section>
+
+<section class="pricing">
+
+<h2>Rental Packages</h2>
+
+<div class="cards">
+
+<div class="card">
+    <h3>4 Hours</h3>
+    <div class="price">$125</div>
+    <p>Perfect for short events.</p>
+</div>
+
+<div class="card">
+    <h3>6 Hours</h3>
+    <div class="price">$175</div>
+    <p>More time for more fun.</p>
+</div>
+
+<div class="card">
+    <h3>All Day</h3>
+    <div class="price">$250</div>
+    <p>Up to 10 hours.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="policies">
+
+<div class="policy-grid">
+
+<div class="<section class="policies">
+
+<h2 style="text-align:center; color:#003399; margin-bottom:40px;">
+    Policies & Information
+</h2>
+
+<div class="policy-grid">
+
+<div class="policy">
+    <img src="deposit.png" class="policy-icon">
+    <h3>Deposit & Payment</h3>
+    <p>$50 deposit required to reserve your date.</p>
+    <p>Remaining balance due 48 hours before the event.</p>
+    <p>Cash, Cash App, Venmo, and Zelle accepted.</p>
+</div>
+
+<div class="policy">
+    <img src="cancel.png" class="policy-icon">
+    <h3>Cancellation Policy</h3>
+    <p>7+ days notice may transfer your deposit.</p>
+    <p>Less than 7 days forfeits the deposit.</p>
+    <p>No-shows are non-refundable.</p>
+</div>
+
+<div class="policy">
+    <img src="travel.png" class="policy-icon">
+    <h3>Travel Fee</h3>
+    <p>Additional travel fees may apply outside the service area.</p>
+    <p>Travel costs depend on distance.</p>
+</div>
+
+<div class="policy">
+    <img src="weather.png" class="policy-icon">
+    <h3>Weather Policy</h3>
+    <p>Unsafe weather may require rescheduling.</p>
+    <p>We work with customers to find a new date.</p>
+</div>
+
+</div>
+
+</section></p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>Book Today!</h2>
+
+<p>📞 Your Phone Number</p>
+
+<p>📍 Your City / Service Area</p>
+
+<p>📘 Your Facebook Page</p>
+
+</section>
+
+<footer>
+
+Burrell's' Inflatables • Safe • Clean • Reliable • Fun For All Ages
+
+</footer>
+
+</body>
+</html>OCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Untitled</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
