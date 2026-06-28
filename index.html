@@ -1,5 +1,5 @@
-<!<!DOCTYPE html>
-<html lang="en"
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,70 +17,83 @@ header{
     background:#004aad;
     color:yellow;
     text-align:center;
-    padding:40px;
-}
-header {
-    background: #004aad;
-    color: yellow;
-    text-align: center;
-    padding: 40px;
+    padding:40px 20px;
 }
 
-header h1 {
-    font-size: 3rem;
-    margin: 0;
+header h1{
+    font-size:3rem;
+    margin:0;
 }
 
-.hero {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 20px;
-
+header p{
+    color:white;
+    font-size:1.3rem;
+    margin-top:10px;
 }
 
-.hero-image {
-    width: 150px;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto;
+.hero{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:25px;
 }
 
-.section {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: auto;
+.hero-image{
+    width:250px;
+    height:auto;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
 }
 
-.pricing {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+.section{
+    padding:40px 20px;
+    max-width:1200px;
+    margin:auto;
 }
 
-.card {
-    background: white;
-    padding: 20px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
-    text-align: center;
+.section h2{
+    text-align:center;
+    color:#004aad;
 }
-.card h3,
-.card h1,
-.card p {
-    color: #004aad;
 
+.pricing{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    width:250px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+    text-align:center;
+}
+
+.card h3{
+    color:#004aad;
+}
+
+.card h1{
+    color:#004aad;
+    margin:10px 0;
+}
+
+.policy-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
 }
 
 .contact{
     background:#004aad;
     color:white;
     text-align:center;
-    padding:40px;
+    padding:40px 20px;
 }
 
 footer{
@@ -89,17 +102,27 @@ footer{
     text-align:center;
     padding:15px;
 }
+
+@media (max-width:768px){
+    .hero-image{
+        width:90%;
+    }
+
+    header h1{
+        font-size:2.2rem;
+    }
+}
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Burrell's Inflatables</h1>
-<p style="color: white !important;">Make Every Party Bounce!</p>
+    <h1>Burrell's Inflatables</h1>
+    <p>Make Every Party Bounce!</p>
 </header>
-<section class="hero">
 
+<section class="hero">
     <img src="F85E308D-64A7-4FB3-994E-0D10856BF849.PNG" alt="Inflatable Slide" class="hero-image">
 
     <img src="image2.png" alt="Bounce House" class="hero-image">
@@ -107,96 +130,77 @@ footer{
     <img src="image3.png" alt="Water Slide" class="hero-image">
 
     <img src="image4.png" alt="Party Rental" class="hero-image">
-
-</section>
-
-
-
-<h2 style="text-align: center;">
-    Safe • Clean • Reliable • Fun For All Ages!</h2>
-
-
-<section class="section">
-<h2 align="center">Rental Packages</h2>
-
-<div class="pricing">
-
-<div class="card">
-<h3>4 Hours</h3>
-<h1>$125</h1>
-<p>Perfect for short celebrations.</p>
-</div>
-
-<div class="card">
-<h3>6 Hours</h3>
-<h1>$175</h1>
-<p>More time to jump and play.</p>
-</div>
-
-<div class="card">
-<h3>All Day</h3>
-<h1>$250</h1>
-<p>Up to 10 hours of fun.</p>
-</div>
-
-</div>
 </section>
 
 <section class="section">
-<h2>What's Included?</h2>
-<ul>
-<li>Delivery</li>
-<li>Setup & Takedown</li>
-<li>Clean & Sanitized Equipment</li>
-<li>Safety Instructions</li>
-<li>Friendly & Reliable Service</li>
-</ul>
+    <h2>Safe • Clean • Reliable • Fun For All Ages!</h2>
 </section>
 
-
-</h2>
-
-<div class="policy-grid">
 <section class="section">
-<h2>Policies</h2>
+    <h2>Rental Packages</h2>
 
-<p><strong>Deposit:</strong> $50 deposit required to reserve your date.</p>
+    <div class="pricing">
 
-<p><strong>Payment:</strong> Remaining balance due 48 hours before event.</p>
+        <div class="card">
+            <h3>4 Hours</h3>
+            <h1>$125</h1>
+            <p>Perfect for short celebrations.</p>
+        </div>
 
-<p><strong>Cancellation:</strong> Deposits may be transferred with 7+ days notice.</p>
+        <div class="card">
+            <h3>6 Hours</h3>
+            <h1>$175</h1>
+            <p>More time to jump and play.</p>
+        </div>
 
-<p><strong>Travel Fee:</strong> Travel fees may apply outside our standard service area.</p>
+        <div class="card">
+            <h3>All Day</h3>
+            <h1>$250</h1>
+            <p>Up to 10 hours of fun.</p>
+        </div>
 
-<p><strong>Weather Policy:</strong> Weather-related rentals may be rescheduled.</p>
+    </div>
+</section>
 
-</div>
+<section class="section">
+    <h2>What's Included?</h2>
 
+    <ul>
+        <li>Delivery</li>
+        <li>Setup & Takedown</li>
+        <li>Clean & Sanitized Equipment</li>
+        <li>Safety Instructions</li>
+        <li>Friendly & Reliable Service</li>
+    </ul>
+</section>
 
+<section class="section">
+    <h2>Policies</h2>
+
+    <div class="policy-box">
+        <p><strong>Deposit:</strong> $50 deposit required to reserve your date.</p>
+
+        <p><strong>Payment:</strong> Remaining balance due 48 hours before event.</p>
+
+        <p><strong>Cancellation:</strong> Deposits may be transferred with 7+ days notice.</p>
+
+        <p><strong>Travel Fee:</strong> Travel fees may apply outside our standard service area.</p>
+
+        <p><strong>Weather Policy:</strong> Weather-related rentals may be rescheduled.</p>
+    </div>
 </section>
 
 <section class="contact">
-<h2> Book Today!  </h2>
-<p>Phone: Coming Soon!</p>
-<p>Email: TBA!</p>
-<p>Facebook: Coming Soon! </p>
+    <h2>Book Today!</h2>
+    <p>Phone: Coming Soon!</p>
+    <p>Email: TBA</p>
+    <p>Facebook: Coming Soon!</p>
 </section>
 
 <footer>
-© 2026 Burrell's Inflatables | Making Every Party Bounce!
+    © 2026 Burrell's Inflatables | Making Every Party Bounce!
 </footer>
 
 </body>
 </html>
-
-<html>
-
-<head>
-  <title>Untitled</title>
-</head>
-
-<body>
-
-</body>
-
-</html>
+```
